@@ -1,0 +1,22 @@
+<alfresco-config>
+        
+        <config evaluator="aspect-name" condition="ge:aspect">
+            <property-sheet>
+                <show-property name="ge:address" display-label-id="ge_address" />
+                <show-property name="cm:latitude" display-label-id="ge_latitude" />
+                <show-property name="cm:longitude" display-label-id="ge_longitude" />
+                <show-property name="ge:altitude" display-label-id="ge_altitude" />
+		<show-property name="ge:mapZoom" display-label-id="ge_mapZoom" />
+            </property-sheet>
+        </config>
+        
+        <config evaluator="string-compare" condition="Action Wizards">
+            <subtypes></subtypes>
+            <specialise-types></specialise-types>
+            <aspects>
+                <aspect name="cm:geographic" display-label-id="ge_aspect_cm_geographic"/>
+                <aspect name="ge:aspect" display-label-id="ge_aspect_name"/>
+            </aspects>
+        </config>
+
+</alfresco-config>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- xsi:schemaLocation="http://www.alfresco.org/model/dictionary/1.0 modelSchema.xsd" -->
+<model name="ge:geoExtended" xmlns="http://www.alfresco.org/model/dictionary/1.0">
+
+   <description>Geographic Extended Domain Model</description>
+   <author>Francois Liot</author>
+   <published>2013-03-22</published>
+   <version>1.0</version>
+
+   <imports>
+      <import uri="http://www.alfresco.org/model/dictionary/1.0" prefix="d"/>
+      <import uri="http://www.alfresco.org/model/content/1.0" prefix="cm"/>
+   </imports>
+
+   <namespaces>
+      <namespace uri="geoExtended.model-1.0" prefix="ge"/>
+   </namespaces>
+
+   <aspects>
+      <aspect name="ge:aspect">
+         <title>Geographic Extended</title>
+
+         <parent>cm:geographic</parent>
+         <!-- inherits of : cm:latitude, cm:longitude -->
+
+         <properties>
+            <property name="ge:address">
+               <title>Address</title>
+               <type>d:text</type>
+               <default></default>
+            </property>
+            <property name="ge:altitude">
+               <title>Altitude</title>
+               <type>d:double</type>
+               <mandatory>true</mandatory>
+               <default>0</default>
+            </property>
+            <property name="ge:mapZoom">
+               <title>Map Zoom</title>
+               <type>d:double</type>
+               <mandatory>true</mandatory>
+               <default>3</default>
+            </property>
+         </properties>
+
+         <overrides>
+            <property name="cm:latitude">
+               <mandatory>true</mandatory>
+               <default>32.24997445586331</default>
+            </property>
+            <property name="cm:longitude">
+               <mandatory>true</mandatory>
+               <default>-36.03515625</default>
+            </property>
+         </overrides>
+
+      </aspect>
+   </aspects>
+
+</model>

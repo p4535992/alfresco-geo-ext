@@ -1,0 +1,10 @@
+<alfresco-config>
+	<config>
+		<forms>
+			<dependencies>
+				<js src="/jquery/jquery-1.6.2-min.js" />
+				<js src="/jquery/jquery-ui-1.8.11.custom.min.js" />
+	        </dependencies>
+ 		</forms>
+	</config>
+</alfresco-config>
