@@ -53,22 +53,22 @@ And optionaly, you can hide technical geo fields, adding :
 
     <appearance>
        <field id="cm:latitude">
-          <control template="/org/alfresco/components/form/controls/geo-hidden.ftl"/>
+          <control template="/org/alfresco/components/form/controls/hidden.ftl"/>
        </field>
     </appearance>
     <appearance>
        <field id="cm:longitude">
-          <control template="/org/alfresco/components/form/controls/geo-hidden.ftl"/>
+          <control template="/org/alfresco/components/form/controls/hidden.ftl"/>
        </field>
     </appearance>
     <appearance>
        <field id="ge:altitude">
-          <control template="/org/alfresco/components/form/controls/geo-hidden.ftl"/>
+          <control template="/org/alfresco/components/form/controls/hidden.ftl"/>
        </field>
     </appearance>
     <appearance>
        <field id="ge:mapZoom">
-          <control template="/org/alfresco/components/form/controls/geo-hidden.ftl"/>
+          <control template="/org/alfresco/components/form/controls/hidden.ftl"/>
        </field>
     </appearance>
 
