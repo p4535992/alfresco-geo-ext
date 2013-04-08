@@ -1,4 +1,5 @@
 <#if field.name == 'prop_ge_address'>
+<#if form.mode != "view">
 
 <div class="form-field">
 
@@ -24,4 +25,5 @@ abel>
 
 </div>
 
+</#if>
 </#if>
